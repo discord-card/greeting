@@ -1,7 +1,7 @@
-[![NPM Version](https://img.shields.io/npm/v/discord-welcome-card?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/discord-welcome-card)
-[![NPM Downloads](https://img.shields.io/npm/dt/discord-welcome-card?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/discord-welcome-card)
-[![NPM License](https://img.shields.io/npm/l/discord-welcome-card?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/discord-welcome-card)
-[![Github Size](https://img.shields.io/github/repo-size/AKORA-Studios/DiscordWelcomeCard?color=00DEC8&label=SIZE&style=for-the-badge)](https://www.npmjs.com/package/discord-welcome-card)
+[![NPM Version](https://img.shields.io/npm/v/@discord-card/greeting?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/@discord-card/greeting)
+[![NPM Downloads](https://img.shields.io/npm/dt/@discord-card/greeting?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/@discord-card/greeting)
+[![NPM License](https://img.shields.io/npm/l/@discord-card/greeting?color=00DEC8&style=for-the-badge)](https://www.npmjs.com/package/@discord-card/greeting)
+[![Github Size](https://img.shields.io/github/repo-size/discord-card/greeting?color=00DEC8&label=SIZE&style=for-the-badge)](https://www.npmjs.com/package/@discord-card/greeting)
 
 #  Discord Welcome Card
 Simple Goodbye and welcome cards
