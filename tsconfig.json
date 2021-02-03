@@ -7,7 +7,7 @@
         ],
         "skipLibCheck": true,
         "allowSyntheticDefaultImports": true,
-        "inlineSourceMap": true,
+        "sourceMap": true,
         "module": "CommonJS",
         "moduleResolution": "node",
         "resolveJsonModule": true,
