@@ -1,6 +1,6 @@
 {
     "name": "@discord-card/greeting",
-    "version": "3.7.4",
+    "version": "3.7.5",
     "description": "Discord Welcome/Goodbye Cards",
     "main": "src/index.js",
     "types": "src/index.d.ts",
