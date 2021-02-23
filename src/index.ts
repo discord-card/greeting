@@ -1,7 +1,8 @@
 import { GuildMember } from 'discord.js';
 import { createCanvas, loadImage, CanvasRenderingContext2D as ctx2D, Canvas, Image } from 'canvas';
 import { writeFileSync } from 'fs';
-import { themes, ThemeType } from '@discord-card/core';
+import { Theme } from '@discord-card/core';
+import { join } from 'path';
 export * from '@discord-card/core';
 
 const production = true;
@@ -10,6 +11,17 @@ const production = true;
 function getFontSize(str: string) {
     if (str.length < 18) return 30;
     return (600 * Math.pow(str.length, -1.05)).toFixed(0);
+}
+
+export type ThemeType = (keyof typeof themes) | Theme;
+const root = join(__dirname, '..', 'images')
+export var themes = {
+    'dark': { color: '#ffffff', image: join(root, 'dark.png') },
+    'sakura': { color: '#7d0b2b', image: join(root, 'sakura.png') },
+    'blue': { color: '#040f57', image: join(root, 'blue.png') },
+    'bamboo': { color: '#137a0d', image: join(root, 'bamboo.png') },
+    'desert': { color: '#000000', image: join(root, 'desert.png'), font: 'Segoe Print' },
+    'code': { color: '#ffffff', image: join(root, 'code.png'), font: 'Source Sans Pro' },
 }
 
 export type ModuleFunction = (ctx: ctx2D) => any
