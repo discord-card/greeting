@@ -7,9 +7,9 @@ testing
 examples
 
 #Developement
-src/index.ts
-src/index.d.ts.map
-!.d.ts
+*.map
+*.tgz
+
 package-lock.json
 tsconfig.json
 
