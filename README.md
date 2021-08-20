@@ -38,7 +38,7 @@ const client = new Discord.Client();
 
 client.on("message", async message => {
     if(message.author.bot) return
-    //Generating the actual welcome Card
+    //Generating the actual goodbye Card
     const image = await goodbyeImage(message.member, 'code');
 
     message.channel.send(new Discord.MessageAttachment(image, 'welcome.png'))
