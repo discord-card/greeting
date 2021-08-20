@@ -15,6 +15,7 @@ const { welcomeImage } = require('discord-welcome-card');
 const client = new Discord.Client();
 
 client.on("message", async message => {
+    if(msg.author.bot) return
     //Generating the actual welcome Card
     const image = await welcomeImage(message.member);
 
@@ -36,6 +37,7 @@ const { goodbyeImage } = require('discord-welcome-card');
 const client = new Discord.Client();
 
 client.on("message", async message => {
+    if(msg.author.bot) return
     //Generating the actual welcome Card
     const image = await goodbyeImage(message.member, 'code');
 
@@ -56,6 +58,7 @@ const { drawCard } = require('discord-welcome-card');
 const client = new Discord.Client();
 
 client.on("message", async message => {
+    if(msg.author.bot) return
     //Generating the actual custom Card
     const image = await drawCard({
             blur: true,
@@ -75,6 +78,46 @@ client.login('Your-Bot-Token');
 ![Image](examples/custom2.png)
 
 <br />
+
+###  Custom Card (custom Background)
+folder strcuture:
+
+folder
+|-index.js
+|-image.png
+
+```javascript
+const Discord = require("discord.js");
+const { drawCard } = require('discord-welcome-card');
+const client = new Discord.Client();
+
+client.on("message", async message => {
+    if(msg.author.bot) return
+    //Generating the actual custom Card
+    const image = await drawCard({
+            blur: true,
+            title: 'Title',
+            theme:  {
+        image: "./image.png",
+        color: new Gradient("linear", {
+            color: "#4287f5",
+            offset: 1
+        }, {
+            color: "#f5426f",
+            offset: 0
+        })
+    },
+            text: 'Text',
+            subtitle: 'Subtitle',
+            rounded: true,
+            border: true,
+            avatar: message.member.user.avatarURL({ format: 'png' })
+        })
+    message.channel.send(new Discord.MessageAttachment(image, 'custom.png'))
+});
+
+client.login('Your-Bot-Token');
+```
 
 ##  Changelog
 | Version  | Content |
