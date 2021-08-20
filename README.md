@@ -7,7 +7,8 @@
 Simple Goodbye and welcome cards
 
 ## Examples
-###  Welcome Card
+<details open> 
+    <summary>  Welcome Card </summary>
 
 ```javascript
 const Discord = require("discord.js");
@@ -24,12 +25,16 @@ client.on("message", async message => {
 
 client.login('Your-Bot-Token');
 ```
+    
 ![Image](examples/welcome2.png)
+
+
+</details>
 
 <br />
 
 
-###  Goodbye Card
+<details> <summary> Goodbye Card </summary>
 
 ```javascript
 const Discord = require("discord.js");
@@ -46,11 +51,13 @@ client.on("message", async message => {
 
 client.login('Your-Bot-Token');
 ```
+    
 ![Image](examples/goodbye2.png)
+    
+</details>
+<br />
 
-<br /><br /><br />
-
-###  Custom Card
+<details><summary> Custom Card </summary>
 
 ```javascript
 const Discord = require("discord.js");
@@ -75,11 +82,14 @@ client.on("message", async message => {
 
 client.login('Your-Bot-Token');
 ```
+    
 ![Image](examples/custom2.png)
 
+</details>
+    
 <br />
 
-###  Custom Card (custom Background)
+<details> <summary> Custom Card (custom Background) </summary>
 folder strcuture:
 
 folder
@@ -118,6 +128,11 @@ client.on("message", async message => {
 
 client.login('Your-Bot-Token');
 ```
+    
+</details>    
+
+## Example projects
+[Miyuki](https://github.com/discord-card/Miyuki) (V13)
 
 ##  Changelog
 | Version  | Content |
