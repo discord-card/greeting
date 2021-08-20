@@ -132,7 +132,7 @@ client.login('Your-Bot-Token');
 </details>    
 
 ## Example projects
-[Miyuki](https://github.com/discord-card/Miyuki) (V13)
+* [Miyuki](https://github.com/discord-card/Miyuki) (V13)
 
 ##  Changelog
 | Version  | Content |
